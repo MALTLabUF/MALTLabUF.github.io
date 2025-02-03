@@ -1,0 +1,238 @@
+/* Basic styles for layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #00529b; /* UF Blue */
+    color: white;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Distribute space evenly */
+    position: relative;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%; /* Take the full width of the header */
+    max-width: 1200px; /* Optional: Add a max width for larger screens */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px; /* Adds padding around the content */
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    position: absolute; /* Allows precise positioning */
+    left: 10px; /* Moves it 10px from the left edge */
+   
+}
+
+
+
+.logo-container img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.vertical-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    font-weight: bold;
+}
+
+.header-title {
+    font-size: 2em;
+    text-align: center;
+    margin: 0;
+    position: absolute; /* Allows centering relative to the header */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to account for content width */
+    font-family: 'JetBrains Mono', monospace; /* Apply JetBrains Mono font */
+    text-decoration: underline; /* Adds the underline */
+    text-decoration-color: white; /* Sets the underline color to white */
+}
+
+
+nav {
+    background-color: #003366; /* Darker shade */
+    padding: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* Carousel Styling */
+.carousel {
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+    display: block;
+}
+
+/* Main section padding */
+main {
+    padding: 0;
+}
+
+footer {
+    background-color: #00529b;
+    color: white;
+    padding: 30px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.footer-logo {
+    position: absolute;
+    left: 10px;
+    height: 30px;
+}
+
+.footer-text {
+    text-align: center;
+    margin: 0;
+}
+.istreet-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    
+}
+
+
+
+.istreet-container img {
+    height: 60px; 
+    width: auto; 
+    margin-left: 10px; 
+   
+}
+
+
+.istreet-container .vertical-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    font-weight: bold;
+}
+.welcome-section h2 {
+    text-align: center; /* Center-align the "Our Values" text */
+    font-family: 'JetBrains Mono', monospace; /* Apply JetBrains Mono */
+    margin: 0; /* Optional: Remove default margin */
+}
+
+.welcome-section p {
+    font-family: 'JetBrains Mono', monospace; /* Apply JetBrains Mono to the paragraph */
+    text-align: left; /* Align paragraph text to the left */
+    margin: 10px auto 100px auto; /* Add vertical spacing: 10px on top, 20px on bottom */
+    padding: 0 20px; /* Add horizontal padding (20px on left and right) */
+    max-width: 900px; /* Optional: Limit the maximum width of the paragraph */
+}
+
+
+.welcome-section {
+    background-color: #e0e0e0; /* Light grey background */
+    padding: 20px; /* Add some padding for spacing */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    text-align: center;
+}
+.accomplishments-section {
+    background-color: #A7C7E7; 
+    color: black; 
+    padding: 20px 0; 
+    border-radius: 5px; 
+    margin: 0; 
+    width: 100%; 
+    text-align: center; 
+}
+
+.accomplishments-section h2 {
+    font-family: 'JetBrains Mono', monospace; 
+    margin-bottom: 20px; 
+}
+
+.accomplishment-item {
+    width: 800px;
+    text-align: center; 
+}
+
+.accomplishments-container {
+    display: flex; 
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 20px; 
+    width: 100%; 
+    padding: 0; 
+    margin: 0 auto; 
+}
+
+.accomplishment-item {
+    width: 600px; 
+    text-align: center; 
+}
+
+.accomplishment-item img {
+    width: 100%; 
+    max-width: 600px; 
+    height: auto; 
+    border-radius: 5px; 
+}
+
+
+.accomplishment-item p {
+    font-family: 'JetBrains Mono', monospace; 
+    margin-top: 10px; 
+    margin: 10px auto 100px auto; 
+}
+
+.accomplishment-item h3 {
+    font-family: 'JetBrains Mono', monospace; 
+    font-size: 1.2em; 
+    margin-top: 10px; 
+    margin-bottom: 5px; 
+    text-align: center;
+}
+.accomplishment-item p {
+    font-family: Arial, sans-serif; 
+    text-align: justify; 
+    margin-left: 10px;
+    margin-right: 10px; 
+    padding: 0 10px; 
+    font-size: 0.9em; 
+    color: #333; 
+    line-height: 1.6; 
+    max-width: 100%; 
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
